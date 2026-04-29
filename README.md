@@ -66,6 +66,46 @@ The software acts as a personalized sandbox. It allows users to visually assembl
 
 ---
 
+## Architecture Guide for Viva Examiners
+
+CloudLab is structured as a modern full-stack application, adhering to a clear separation of concerns between its frontend and backend components.
+
+### Frontend (React.js with Tailwind CSS)
+The user interface is built with **React.js**, providing a dynamic and responsive single-page application experience.
+-   **Component-Based Structure**: The UI is composed of reusable React components (e.g., `Canvas`, `Sidebar`, `Labs`, `Dashboard`).
+-   **State Management**: React's `useState` and `useEffect` hooks manage local component state and side effects, including data fetching and UI updates.
+-   **Routing**: `react-router-dom` handles navigation between different views (Canvas, Labs, Saved Architectures).
+-   **Drag-and-Drop Canvas**: The core simulation area leverages `reactflow` for interactive node-based diagramming, enabling users to visually construct cloud architectures.
+-   **Styling**: **Tailwind CSS** is used for utility-first styling, ensuring a consistent, slick, and minimalistic aesthetic with defined color accents.
+-   **API Communication**: `axios` is used to make asynchronous HTTP requests to the Python backend.
+-   **Performance**: Implemented debouncing for simulation calls to optimize API usage during rapid UI interactions.
+
+### Backend (FastAPI with MongoDB)
+The backend is developed in **Python** using the **FastAPI** framework, chosen for its high performance and ease of use for building APIs.
+-   **RESTful API**: Provides a clear set of endpoints for frontend-backend communication.
+-   **MongoDB Database**: Used for data persistence, storing:
+    -   `components`: A catalog of available cloud resources (VMs, Load Balancers, Databases) with their base cost and performance metrics.
+    -   `labs`: Pre-defined simulation scenarios with specific objectives (e.g., target cost).
+    -   `architectures`: User-saved cloud designs, allowing for persistence and retrieval.
+-   **Simulation Logic**: The `/api/simulate` endpoint is the heart of the backend. It receives the current architecture (nodes and edges) from the frontend and:
+    -   Calculates estimated costs and performance scores based on component data from MongoDB.
+    -   Includes basic architectural validation (e.g., checking if Load Balancers are connected to VMs) to provide intelligent feedback and warnings.
+-   **CORS Middleware**: Configured to allow cross-origin requests from the React frontend during development.
+-   **Pydantic**: Ensures robust data validation for incoming API requests and outgoing responses.
+
+### Data Flow
+1.  **Frontend Initialization**: On load, the React app fetches available `components` and `labs` from the FastAPI backend.
+2.  **User Interaction**: Users drag and drop components onto the `reactflow` canvas and connect them.
+3.  **Simulation Trigger**: When the user clicks "Simulate" (or automatically via debouncing), the current `nodes` and `edges` data is sent to the `/api/simulate` endpoint.
+4.  **Backend Processing**: The FastAPI backend processes this data, calculates costs/performance, performs validation, and returns the results.
+5.  **Frontend Display**: The `Dashboard` component in React displays the simulation results and any warnings.
+6.  **Lab Integration**: If a lab is active, the simulation results are checked against the lab's objectives, and the user is notified of their progress.
+7.  **Persistence**: Users can save their current canvas architecture via a dedicated API endpoint, and retrieve previously saved designs.
+
+This architecture ensures a scalable, maintainable, and interactive simulation environment, perfectly suited for educational demonstrations and experimentation.
+
+---
+
 ## Setup & Execution
 
 ### Prerequisites

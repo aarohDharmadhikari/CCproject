@@ -44,62 +44,62 @@ This document outlines the comprehensive development phases for the **CloudLab �
 
 ---
 
-## 🟡 Phase 3: Frontend Development (React + Tailwind CSS)
+## ✅ Phase 3: Frontend Development (React + Tailwind CSS)
 *Objective: Construct the user interface and implement the core interactive features.*
 
-- [ ] **Frontend Initialization**
-  - [ ] Initialize React App (Vite or Create React App).
-  - [ ] Install and configure Tailwind CSS.
-  - [ ] Set up routing (`react-router-dom`).
-- [ ] **Layout Construction**
-  - [ ] Build the boxy left-side navigation bar.
-  - [ ] Create base page layouts (Canvas Page, Labs Page, Saved Architectures Page).
-- [ ] **Drag-and-Drop Implementation**
-  - [ ] Integrate a drag-and-drop library (e.g., `reactflow` or `@hello-pangea/dnd`).
-  - [ ] Create draggable UI components:
-    - [ ] 🖥️ Virtual Machine Node
-    - [ ] ⚖️ Load Balancer Node
-    - [ ] 🗄️ Database Node
-  - [ ] Implement connection logic (drawing lines between nodes).
-- [ ] **Simulation Dashboard UI**
-  - [ ] Build the dynamic Cost Estimator panel.
-  - [ ] Build the Performance Metrics panel (Speed, Uptime, Bottlenecks).
-  - [ ] Connect the frontend state to the Python backend via Axios/Fetch.
-- [ ] **Pre-Built Labs UI**
-  - [ ] Create the lab selection menu.
-  - [ ] Implement the interactive "Mission Objective" tracker on the canvas.
+- [x] **Frontend Initialization**
+  - [x] Initialize React App (Vite or Create React App).
+  - [x] Install and configure Tailwind CSS.
+  - [x] Set up routing (`react-router-dom`).
+- [x] **Layout Construction**
+  - [x] Build the boxy left-side navigation bar.
+  - [x] Create base page layouts (Canvas Page, Labs Page, Saved Architectures Page).
+- [x] **Drag-and-Drop Implementation**
+  - [x] Integrate a drag-and-drop library (`reactflow`).
+  - [x] Create draggable UI components:
+    - [x] 🖥️ Virtual Machine Node
+    - [x] ⚖️ Load Balancer Node
+    - [x] 🗄️ Database Node
+  - [x] Implement connection logic (drawing lines between nodes).
+- [x] **Simulation Dashboard UI**
+  - [x] Build the dynamic Cost Estimator panel.
+  - [x] Build the Performance Metrics panel (Speed, Uptime, Bottlenecks).
+  - [x] Connect the frontend state to the Python backend via Axios/Fetch.
+- [x] **Pre-Built Labs UI**
+  - [x] Create the lab selection menu.
+  - [x] Implement the interactive "Mission Objective" tracker on the canvas.
 
 ---
 
-## 🔵 Phase 4: Integration & Polish
+## ✅ Phase 4: Integration & Polish
 *Objective: Connect the frontend and backend, test the algorithms, and refine the aesthetic.*
 
-- [ ] **End-to-End Testing**
-  - [ ] Verify that adding a VM updates the cost in real-time.
-  - [ ] Ensure saved architectures load correctly from MongoDB.
-  - [ ] Test edge cases (e.g., connecting a DB directly to a user input node).
-- [ ] **UI/UX Polish**
-  - [ ] Add smooth animations for node drops and panel transitions.
-  - [ ] Ensure Tailwind color accents (e.g., vibrant blue for connections, neon green for successful simulations) pop correctly against the minimalistic background.
-  - [ ] Implement empty states and loading spinners.
-- [ ] **Performance Optimization**
-  - [ ] Debounce the simulation API calls during rapid drag-and-drop actions.
-  - [ ] Ensure the React canvas remains performant with 50+ nodes.
+- [x] **End-to-End Testing**
+  - [x] Verify that adding a VM updates the cost in real-time.
+  - [x] Ensure saved architectures load correctly from MongoDB.
+  - [x] Test edge cases (e.g., connecting a DB directly to a user input node).
+- [x] **UI/UX Polish**
+  - [x] Add smooth animations for node drops and panel transitions.
+  - [x] Ensure Tailwind color accents (e.g., vibrant blue for connections, neon green for successful simulations) pop correctly against the minimalistic background.
+  - [x] Implement empty states and loading spinners.
+- [x] **Performance Optimization**
+  - [x] Debounce the simulation API calls during rapid drag-and-drop actions.
+  - [x] Ensure the React canvas remains performant with 50+ nodes.
 
 ---
 
-## 🟣 Phase 5: Documentation & Deployment Prep (Viva Ready)
+## ✅ Phase 5: Documentation & Deployment Prep (Viva Ready)
 *Objective: Prepare the project for final presentation and demo.*
 
-- [ ] **Viva Demo Preparations**
-  - [ ] Create 3 highly polished pre-built labs demonstrating specific cloud concepts (Scaling, Redundancy, Cost-Saving).
-  - [ ] Seed the MongoDB database with initial lab data.
-- [ ] **Final Code Cleanup**
-  - [ ] Remove console logs and unused code.
-  - [ ] Add inline comments to complex cost calculation algorithms.
-- [ ] **Final Documentation**
-  - [ ] Update `README.md` with final screenshots of the UI.
-  - [ ] Add an "Architecture Guide" section for the viva examiner.
+- [x] **Viva Demo Preparations**
+  - [x] Create 3 highly polished pre-built labs demonstrating specific cloud concepts (Scalable Web Service, Two-Tier Application, Cost-Effective Batch Processor).
+  - [x] Seed the MongoDB database with initial lab data.
+- [x] **Final Code Cleanup**
+  - [x] Remove console logs and unused code.
+  - [x] Add inline comments to complex cost calculation algorithms.
+- [x] **Final Documentation**
+  - [x] Update `README.md` with final screenshots of the UI.
+  - [x] Add an "Architecture Guide" section for the viva examiner.
 
 ---
-*Status: Backend Complete. Frontend development is next.*
+*Status: Project Completed!*
