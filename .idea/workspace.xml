@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e181784a-d8b7-45fe-bf90-3ecd454ee398" name="Changes" comment="Initialize CloudLab project with FastAPI backend and documentation&#10;&#10;- Create basic FastAPI application in `main.py` with endpoints for simulation logic and predefined labs.&#10;- Add `requirements.txt` containing backend dependencies (`fastapi`, `uvicorn`, `pymongo`, `pydantic`).&#10;- Add comprehensive project documentation including `README.md` and a phase-by-phase `roadmap.md`.&#10;- Initialize `.idea` directory with PyCharm/IntelliJ project configuration files." />
+    <list default="true" id="e181784a-d8b7-45fe-bf90-3ecd454ee398" name="Changes" comment="Initialize CloudLab project with FastAPI backend and documentation&#10;&#10;- Create basic FastAPI application in `main.py` with endpoints for simulation logic and predefined labs.&#10;- Add `requirements.txt` containing backend dependencies (`fastapi`, `uvicorn`, `pymongo`, `pydantic`).&#10;- Add comprehensive project documentation including `README.md` and a phase-by-phase `roadmap.md`.&#10;- Initialize `.idea` directory with PyCharm/IntelliJ project configuration files.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +15,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "aarohDharmadhikari"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/aarohDharmadhikari/CCproject",
+    "accountId": "afb002c2-edb2-4cf7-94df-3fe98c59ec62"
+  }
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -65,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1777443612768</updated>
-      <workItem from="1777443613778" duration="2284000" />
+      <workItem from="1777443613778" duration="2639000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize CloudLab project with FastAPI backend and documentation&#10;&#10;- Create basic FastAPI application in `main.py` with endpoints for simulation logic and predefined labs.&#10;- Add `requirements.txt` containing backend dependencies (`fastapi`, `uvicorn`, `pymongo`, `pydantic`).&#10;- Add comprehensive project documentation including `README.md` and a phase-by-phase `roadmap.md`.&#10;- Initialize `.idea` directory with PyCharm/IntelliJ project configuration files.">
       <option name="closed" value="true" />
@@ -91,7 +105,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777445664331</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initialize CloudLab project with FastAPI backend and documentation&#10;&#10;- Create basic FastAPI application in `main.py` with endpoints for simulation logic and predefined labs.&#10;- Add `requirements.txt` containing backend dependencies (`fastapi`, `uvicorn`, `pymongo`, `pydantic`).&#10;- Add comprehensive project documentation including `README.md` and a phase-by-phase `roadmap.md`.&#10;- Initialize `.idea` directory with PyCharm/IntelliJ project configuration files.">
+      <option name="closed" value="true" />
+      <created>1777445972110</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777445972110</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initialize CloudLab project with FastAPI backend and documentation&#10;&#10;- Create basic FastAPI application in `main.py` with endpoints for simulation logic and predefined labs.&#10;- Add `requirements.txt` containing backend dependencies (`fastapi`, `uvicorn`, `pymongo`, `pydantic`).&#10;- Add comprehensive project documentation including `README.md` and a phase-by-phase `roadmap.md`.&#10;- Initialize `.idea` directory with PyCharm/IntelliJ project configuration files.">
+      <option name="closed" value="true" />
+      <created>1777445988313</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777445988313</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,5 +130,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialize CloudLab project with FastAPI backend and documentation&#10;&#10;- Create basic FastAPI application in `main.py` with endpoints for simulation logic and predefined labs.&#10;- Add `requirements.txt` containing backend dependencies (`fastapi`, `uvicorn`, `pymongo`, `pydantic`).&#10;- Add comprehensive project documentation including `README.md` and a phase-by-phase `roadmap.md`.&#10;- Initialize `.idea` directory with PyCharm/IntelliJ project configuration files." />
     <option name="LAST_COMMIT_MESSAGE" value="Initialize CloudLab project with FastAPI backend and documentation&#10;&#10;- Create basic FastAPI application in `main.py` with endpoints for simulation logic and predefined labs.&#10;- Add `requirements.txt` containing backend dependencies (`fastapi`, `uvicorn`, `pymongo`, `pydantic`).&#10;- Add comprehensive project documentation including `README.md` and a phase-by-phase `roadmap.md`.&#10;- Initialize `.idea` directory with PyCharm/IntelliJ project configuration files." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CCproject$main.coverage" NAME="main Coverage Results" MODIFIED="1777445719244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
